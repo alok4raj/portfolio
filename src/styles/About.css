@@ -1,0 +1,131 @@
+/* About Section Styles */
+.about {
+    background-color: white;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: var(--color-text-main);
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    display: inline-block;
+}
+
+.about-text h2::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 4px;
+    bottom: -8px;
+    left: 0;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-full);
+}
+
+.about-bio {
+    font-size: 1.05rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.education-card {
+    background-color: var(--color-background);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-primary);
+    margin-top: var(--spacing-md);
+}
+
+.education-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin-bottom: 0.25rem;
+}
+
+.education-card span {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.about-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.code-block {
+    background-color: #1e1e1e;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: var(--shadow-xl);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #d4d4d4;
+    position: relative;
+}
+
+.code-header {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff5f56;
+}
+
+.yellow {
+    background-color: #ffbd2e;
+}
+
+.green {
+    background-color: #27c93f;
+}
+
+.code-line {
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.keyword {
+    color: #569cd6;
+}
+
+/* Blue for keywords */
+.string {
+    color: #ce9178;
+}
+
+/* Orange for strings */
+.class-name {
+    color: #4ec9b0;
+}
+
+/* Teal for classes */
+.function {
+    color: #dcdcaa;
+}
+
+/* Yellow for functions */
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
