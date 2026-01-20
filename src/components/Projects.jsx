@@ -19,8 +19,8 @@ const Projects = () => {
             description: 'CRUD-based application using Spring MVC, Hibernate, JSP, and PostgreSQL following MVC architecture with server-side validation.',
             techStack: ['Spring MVC', 'Hibernate', 'JSP', 'PostgreSQL'],
             icon: <FaUserGraduate />,
-            githubLink: '#',
-            demoLink: null // 'Live Demo' if available
+            githubLink: 'https://github.com/alok4raj/student-management',
+            demoLink: '#'
         },
         {
             id: 3,
@@ -52,11 +52,21 @@ const Projects = () => {
                                     ))}
                                 </div>
                                 <div className="project-links">
-                                    <a href={project.githubLink} className="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <a
+                                        href={project.githubLink}
+                                        className="btn btn-outline btn-sm"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         <FaGithub /> GitHub
                                     </a>
                                     {project.demoLink && (
-                                        <a href={project.demoLink} className="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                                        <a
+                                            href={project.demoLink}
+                                            className="btn btn-primary btn-sm"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <FaExternalLinkAlt /> Live Demo
                                         </a>
                                     )}
@@ -66,7 +76,7 @@ const Projects = () => {
                     ))}
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 
